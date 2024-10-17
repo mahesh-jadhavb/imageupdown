@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+   /* overflow: hidden;*/
+   background: lawngreen;
+   background-image: url("untitled.jpg");
+   background-size: cover;
+  }
+
+  .om {
+    position: relative;
+    width: 100vw;
+    height: 1000px;
+    /*overflow: hidden;*/
+  }
+
+  .left-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    animation: leftTopAnimation 2s ease-in-out infinite alternate;
+  }
+
+  .right-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    animation: rightBottomAnimation 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes leftTopAnimation {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, 300px); }
+  }
+
+  @keyframes rightBottomAnimation {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, -200px); }
+  }
